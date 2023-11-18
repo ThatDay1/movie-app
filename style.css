@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --light-blue: #0061ff;
+    --light-blue-near: #004cc6;
+    --dark-blue: #1b263b;
+    --bg-dark: #201f28;
+    --grey: #a0a0a0;
+    --white: #fff;
+    --near-white: #efefef;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--light-blue), var(--dark-blue));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 70vw;
+    padding: 3rem 1.8rem;
+    background-color: var(--bg-dark);
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.15);
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 20px;
+}
+
+.search-container input, .search-container button {
+    font-size: 1rem;
+    outline: none;
+    border-radius: 0.3rem;
+} 
+
+.search-container input {
+    background-color: transparent;
+    border: 1px solid var(--grey);
+    padding: 0.7rem;
+    color: var(--white);
+}
+
+.search-container input:focus {
+    border-color: var(--white);
+}
+
+.search-container button {
+    background-color: var(--light-blue);
+    border: none;
+    cursor: pointer;
+    color: var(--near-white);
+    transition: all 0.2s ease;
+}
+
+.search-container button:hover {
+    background-color: var(--light-blue-near);
+}
+
+#result {
+    color: var(--white);
+}
+
+.info {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+
+.poster {
+    width: 60%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 0.6rem 0 0.9rem 0;
+}
+
+.rating img {
+    width: 1.25rem;
+}
+
+.rating h4 {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.95rem;
+    color: var(--grey);
+    font-weight: 300;
+    margin: 0.6rem 0;
+}
+
+.genre {
+    display: flex;
+    justify-content: space-around;
+}
+
+.genre div {
+    border: 1px solid var(--grey);
+    font-size: 0.75rem;
+    padding: 0.4rem 1.6rem;
+    border-radius: 0.4rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 500;
+    margin-top: 1.2rem;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    text-align: justify;
+    color: var(--grey);
+}
+
+.msg {
+    text-align: center;
+}
